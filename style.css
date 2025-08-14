@@ -40,6 +40,7 @@ body {
     font-size: 35px;
     font-weight: normal;
     font-weight: bold;
+    margin-left: 50px;
 
     font-family: "Barlow Semi Condensed", sans-serif;
     font-weight: 900;
@@ -121,6 +122,7 @@ body {
     line-height: 1.2;
     margin:0;
     margin-top: 430px;
+    margin-left: 50px;
     
     font-family: "Barlow Semi Condensed", sans-serif;
     font-weight: 900;
@@ -152,7 +154,7 @@ body {
     display: flex;
     justify-content: space-between; 
     align-items: flex-start;
-    padding: 80px 10%; /* Espacio alrededor de la sección */
+    padding: 80px 10%;
     background-color: #000; 
     color: #fff; 
     gap: 50px;
@@ -207,6 +209,227 @@ body {
     height: auto;
     object-fit: cover;
     z-index: 1;
+}
+
+/* SECTION3 */
+.section3 {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #000; 
+    color: white;
+}
+
+.section3 h2 {
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 150px;
+    margin-bottom: 20px;
+
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.section3 p {
+    font-size: 23px;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+    font-family: sans-serif;
+}
+
+.section3 .columna {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+.section3 ul {
+    list-style: none;
+    margin-top: 40px;
+    margin-left: -10px;
+}
+
+.section3 li {
+    font-size: 18px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.section3 li:not(:last-child)::after {
+    content: "•";
+    display: block;
+    color: white;
+    font-size: 20px;
+    margin-top: 1px;
+}
+
+/* SECTION4 */
+.section4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    padding: 80px 100px;
+    background-color: #fff;
+    color: #000; 
+    font-family: sans-serif;
+}
+
+.section4-texto {
+    flex: 1;
+}
+
+.section4-texto h2 {
+    font-size: 60px;
+    font-weight: 900;
+    margin-bottom: 20px;
+
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.section4-texto p {
+    font-size: 20px;
+    line-height: 1.6;
+    max-width: 450px;
+}
+
+.section4-formulario {
+    flex: 1;
+}
+
+.section4-formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.section4-formulario label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.section4-formulario label span {
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.nombre-apellido {
+    display: flex;
+    gap: 10px;
+}
+
+.section4-formulario input {
+    padding: 10px;
+    border: 1px solid #aaa;
+    font-size: 14px;
+    width: 40%;
+}
+
+.section4-formulario input[type="date"] {
+    width: fit-content;
+}
+
+.section4-formulario button {
+    padding: 10px 45px;
+    border: 2px solid #000;
+    background: transparent;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    align-self: flex-start;
+}
+
+.section4-formulario button:hover {
+    background: #000;
+    color: #fff;
+}
+
+/* SECTION5 */
+.section5 {
+    padding: 100px 50px;
+    background: linear-gradient(90deg, #d8b26a, #c2b0a6, #a6ada0); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.testimonial-container {
+    max-width: 1100px; 
+    height: 500px;
+}
+
+.testimonial {
+    font-family: 'Arial', sans-serif;
+    font-size: 65px;
+    font-weight: bold;
+    color: #ffffff;
+    line-height: 1.4;
+    margin-top: 50px;
+    margin-bottom: 20px;
+
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.author {
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+/* SECTION6 */
+.section6 {
+    background-color: #000;
+    color: #fff;
+    padding: 80px 100px;
+    font-family: 'Arial', sans-serif;
+}
+
+.section6 .locations {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.section6 .location {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.section6 .location h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.section6 .location p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.section6 .images {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.section6 .images img {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
 /* FOOTER */

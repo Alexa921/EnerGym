@@ -387,49 +387,51 @@ body {
 
 /* SECTION6 */
 .section6 {
-    background-color: #000;
-    color: #fff;
-    padding: 80px 100px;
+    background-color: #000; 
+    color: #fff; 
     font-family: 'Arial', sans-serif;
 }
 
-.section6 .locations {
+.locations {
     display: flex;
     justify-content: space-between;
-    gap: 50px;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
 }
 
-.section6 .location {
-    flex: 1;
-    min-width: 300px;
+.location {
+    flex: 1 1 50%; 
     text-align: center;
+    margin-bottom: 50px;
 }
 
-.section6 .location h2 {
-    font-size: 28px;
+.location h2 {
+    font-size: 50px;
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 900;
+    font-style: normal;
 }
 
-.section6 .location p {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 30px;
+.location p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 100px;
 }
 
-.section6 .images {
+.location .images {
     display: flex;
     justify-content: center;
-    gap: 10px;
     flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
-.section6 .images img {
-    width: 100px;
-    height: 150px;
+.location .images img {
+    width: 310px; 
+    height: 280px;
     object-fit: cover;
-    border-radius: 8px;
 }
 
 /* FOOTER */
@@ -443,6 +445,7 @@ body {
 .footer-top h2 {
     font-size: 80px;
     margin-bottom: 20px;
+    margin-left: 80px;
 
     font-family: "Barlow Semi Condensed", sans-serif;
     font-weight: 900;
@@ -454,6 +457,7 @@ body {
     max-width: 600px;
     margin-bottom: -40px;
     line-height: 1.6;
+    margin-left: 80px;
 }
 
 .footer-top form {
@@ -472,6 +476,7 @@ body {
     cursor: pointer;
     transition: background 0.3s ease, color 0.3s ease;
     border-radius: 25px; 
+    margin-right: 30px;
 }
 
 .footer-top button:hover {
@@ -491,6 +496,7 @@ body {
 .footer-links h3 {
     font-size: 40px;
     margin-bottom: 15px;
+    margin-left: 80px;
 
     font-family: "Barlow Semi Condensed", sans-serif;
     font-weight: 900;
@@ -511,6 +517,7 @@ body {
     text-decoration: underline;
     font-size: 18px;
     transition: opacity 0.3s ease;
+    margin-left: 80px;
 }
 
 .footer-links ul li a:hover {
@@ -520,11 +527,14 @@ body {
 .footer-links p {
     font-size: 14px;
     margin: 4px 0;
+    margin-left: 80px;
+
 }
 
 .footer-logo h3 {
     font-size: 40px;
     font-weight: bold;
+    margin-right: 30px;
 
     font-family: "Barlow Semi Condensed", sans-serif;
     font-weight: 900;

@@ -35,9 +35,8 @@ body {
     left: 0;
 }
 
-
 .nav-left .logo {
-    font-size: 35px;
+    font-size: 45px;
     font-weight: normal;
     font-weight: bold;
     margin-left: 50px;
@@ -53,14 +52,50 @@ body {
     gap: 25px;
     margin-top: 10px;
 }
-.nav-center li a {
+
+.nav-center li {
+    position: relative;
+}
+
+.nav-center a {
     text-decoration: none;
     color: white;
     font-size: 22px;
     transition: color 0.3s ease;
+    padding: 5px;
 }
-.nav-center li a:hover {
-    color: #ddd;
+
+/* Dropdown oculto */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background: black;
+    padding: 10px 0;
+    list-style: none;
+    min-width: 160px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Opciones dentro del dropdown */
+.dropdown-menu li a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+/* Mostrar el dropdown al hacer hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
 }
 
 .nav-right {
@@ -550,7 +585,3 @@ body {
     flex: none;
     color: rgb(129, 129, 129);
 }
-
-
-
-

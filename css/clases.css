@@ -122,68 +122,61 @@ body {
 
 /* HERO */
 
-/*SECTION1*/
-.section1 h2 {
-    font-size: 100px;
-    margin-top: 200px;
-    margin-left: 100px;
-
-    font-family: "Barlow Semi Condensed", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-}
-
-.contenedor {
+/* SECTION CLASES */
+.clases {
+    position: relative;
     display: flex;
-    flex-direction: column;
-    padding-bottom: 160px;
-    margin-top: -80px;
-    margin-left: 1000px;
-}
-
-.section1 h3 {
-    font-size: 60px;
-    margin-top: -30px;
-    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+    background: #f4f4f4;
+    overflow: hidden;
 
     font-family: "Barlow Semi Condensed", sans-serif;
     font-weight: 900;
     font-style: normal;
 }
 
-.section1 p {
-    font-size: 15px;
+.lista-clases {
+    position: relative;
+    z-index: 2;
+    list-style: none;
+    padding: 0;
+    margin: 200px 0px;
+    text-align: center;
 }
 
-.btn {
-    background: transparent;
-    color: black;
-    padding: 15px 30px;
-    text-decoration: none;
-    font-size: 16px;
-    border: none;
+.lista-clases li {
+    font-size: 80px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 20px 0;
     cursor: pointer;
-    transition: background 0.3s ease;
-    margin-top: -140px;
-    margin-left: 1000px;
-    border-radius: 40px;
-    border: 2px solid black;
+    color: black;
+    transition: color 0.3s ease;
 }
 
-.btn:hover {
-    background: black;
-    color: white;
+/* Imagen de fondo que cambia */
+.imagen-fondo {
+    position: absolute;
+    width: 600px;
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.5s ease, background-image 0.5s ease;
+    z-index: 1;
 }
 
-.linea {
-    height: 2px;  
-    width: 85%;     
-    background-color: rgb(61, 61, 61); 
-    margin-top: 70px;
-    margin-left: 130px;
-    margin-bottom: 200px;     
-    padding: 0;      
+.cardio {
+    top: 20px;
+    left: 750px;
 }
+
+a {
+    text-decoration: none;
+}
+
 
 /* FOOTER */
 .footer {
@@ -301,5 +294,3 @@ body {
     flex: none;
     color: rgb(129, 129, 129);
 }
-
-

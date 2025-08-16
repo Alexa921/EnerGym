@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Cormorant+Garamond:wght@500&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nanum+Myeongjo&family=PT+Sans+Narrow:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="css/programa.css">
+    <link rel="stylesheet" href="css/contacto.css">
     <title>ENERGYM</title>
 </head>
 <body>
@@ -19,11 +19,18 @@
             <a href="/index.html"><h1 class="logo">ENERGYM</h1></a>
         </div>
         <ul class="nav-center">
-            <li><a href="/">Acerca de</a></li>
-            <li><a href="/programa.html">Programa</a></li>
-            <li><a href="/contacto.html">Contacto</a></li>
-            <li><a href="/tienda.html">Tienda</a></li>
-        </ul>
+            <li class="dropdown">
+            <a href="#">Acerca de</a>
+            <ul class="dropdown-menu">
+                <li><a href="/instructores.html">Instructores</a></li>
+                <li><a href="/clases.html">Clases</a></li>
+                <li><a href="/precios.html">Precios</a></li>
+            </ul>
+                </li>
+                <li><a href="/programa.html">Programa</a></li>
+                <li><a href="/contacto.html">Contacto</a></li>
+                <li><a href="/tienda.html">Tienda</a></li>
+            </ul>
         <div class="nav-right">
             <a href="https://instagram.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384031.png" alt="Instagram" class="icon"></a>
             <a href="https://facebook.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384005.png" alt="Facebook" class="icon"></a>
@@ -34,6 +41,59 @@
     </nav>
 
     <!-- HERO -->
+
+    <!-- SECTION1 -->
+    <section class="contacto">
+        <div class="info">
+            <h2>MEDELLÍN</h2>
+            <p>Cra. 43F #12-49<br>
+            El Poblado, Medellín<br>
+            12345</p>
+
+            <h3>CONTACTO</h3>
+            <p>alexandra@dominio.com<br>
+            (555)-555-5555</p>
+        </div>
+
+        <div class="mapa">
+            <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.XXXXX!2d-75.XXXXX!3d6.XXXXX!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xXXXXXXXXXXXX%3A0xYYYYYYYYYYYY!2sEl%20Poblado%2C%20Medell%C3%ADn!5e0!3m2!1ses!2sco!4v0000000000000"
+            width="400" 
+            height="400" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+
+        <div class="info">
+            <h2>BOGOTA</h2>
+            <p>Cra. 49 # 50 a 20 5 piso<br>
+            Los Naranjos, Itagüi<br>
+            12345</p>
+
+            <h3>CONTACTO</h3>
+            <p>alexandra@dominio.com<br>
+            (555)-555-5555</p>
+        </div>
+
+        <div class="mapa">
+            <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.903736323961!2d-74.0720923!3d4.7109886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99a48d0f0a0d%3A0x9d2d29d4f5f65b9!2sBogot%C3%A1!5e0!3m2!1ses!2sco!4v1692196000000"
+            width="400" 
+            height="400" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+        <div class="linea"></div>
+    </section>
+
 
     <!-- FOOTER -->
     <footer class="footer">

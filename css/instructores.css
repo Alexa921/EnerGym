@@ -122,68 +122,64 @@ body {
 
 /* HERO */
 
-/*SECTION1*/
-.section1 h2 {
-    font-size: 100px;
-    margin-top: 200px;
-    margin-left: 100px;
-
-    font-family: "Barlow Semi Condensed", sans-serif;
-    font-weight: 900;
-    font-style: normal;
+/* SECTION INSTRUCTORES */
+.instructores {
+    padding: 80px 50px;
+    background: #fff;
 }
 
-.contenedor {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 160px;
-    margin-top: -80px;
-    margin-left: 1000px;
+.grid-instructores {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
-.section1 h3 {
-    font-size: 60px;
-    margin-top: -30px;
-    margin-bottom: 30px;
-
-    font-family: "Barlow Semi Condensed", sans-serif;
-    font-weight: 900;
-    font-style: normal;
+.instructor {
+    position: relative;
+    overflow: hidden;
 }
 
-.section1 p {
-    font-size: 15px;
+.instructor img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
 }
 
-.btn {
-    background: transparent;
-    color: black;
-    padding: 15px 30px;
-    text-decoration: none;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    transition: background 0.3s ease;
-    margin-top: -140px;
-    margin-left: 1000px;
-    border-radius: 40px;
-    border: 2px solid black;
+.instructor:hover img {
+    transform: scale(1.05);
 }
 
-.btn:hover {
-    background: black;
+.instructor .info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
     color: white;
+    font-family: 'Arial Black', sans-serif;
 }
 
-.linea {
-    height: 2px;  
-    width: 85%;     
-    background-color: rgb(61, 61, 61); 
-    margin-top: 70px;
-    margin-left: 130px;
-    margin-bottom: 200px;     
-    padding: 0;      
+.instructor .info h2 {
+    font-size: 45px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 900;
+    font-style: normal;
 }
+
+.instructor .info p {
+    font-size: 30px;
+
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: lighter;
+    font-style: normal;
+}
+
 
 /* FOOTER */
 .footer {
@@ -301,5 +297,3 @@ body {
     flex: none;
     color: rgb(129, 129, 129);
 }
-
-

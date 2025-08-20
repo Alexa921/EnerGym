@@ -253,14 +253,12 @@ body {
 
 /* Texto lateral (BOXEO) */
 .side-text {
-  position: absolute;
-  bottom: 20px;   
-  right: 40px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  text-decoration: none;   
-  color: black;           
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: black;  
 }
 
 .side-text span {
@@ -288,6 +286,13 @@ body {
   align-items: center;
   gap: 8px;
 }
+
+.side-text, .side-link {
+    position: relative;
+    float: right;
+    margin-top: -12px;
+}
+
 
 /* Texto lateral izquierdo (CARDIO) */
 .side-text.left {

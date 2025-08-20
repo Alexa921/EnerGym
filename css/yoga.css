@@ -252,14 +252,12 @@ body {
 
 /* Texto lateral (BOXEO) */
 .side-text {
-  position: absolute;
-  bottom: 20px;   
-  right: 40px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  text-decoration: none;   
-  color: black;           
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: black;  
 }
 
 .side-text span {
@@ -280,9 +278,18 @@ body {
   font-size: 60px;
   font-weight: 900;
   color: black;
-  text-decoration: none;  
+  text-decoration: none;
   font-family: "Barlow Semi Condensed", sans-serif;
   font-style: normal;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.side-text, .side-link {
+    position: relative;
+    float: right;
+    margin-top: -12px;
 }
 
 /* Texto lateral izquierdo (CARDIO) */

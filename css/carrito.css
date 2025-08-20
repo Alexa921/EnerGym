@@ -4,11 +4,11 @@
     box-sizing: border-box;
 }
 body {
-    color: white;
+    color: black;
 }
 
 .nav-right span {
-    color: white;
+    color: black;
     margin-top: 10px;
     margin-left: -10px;
 }
@@ -29,7 +29,7 @@ body {
 
 .navbar.scrolled {
     position: fixed;     
-    background: black;  
+    background: white;  
     padding: 10px 50px;  
     top: 0;
     left: 0;
@@ -59,7 +59,7 @@ body {
 
 .nav-center a {
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: 22px;
     transition: color 0.3s ease;
     padding: 5px;
@@ -71,7 +71,7 @@ body {
     position: absolute;
     top: 100%; 
     left: 0;
-    background: black;
+    background: white;
     padding: 10px 0;
     list-style: none;
     min-width: 160px;
@@ -86,7 +86,7 @@ body {
 .dropdown-menu li a {
     display: block;
     padding: 10px 20px;
-    color: white;
+    color: black;
     font-size: 16px;
     transition: background 0.3s ease;
 }
@@ -105,14 +105,14 @@ body {
 }
 .nav-right a {
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: 25px; 
     margin-top: -15px;
 }
 .icon {
     width: 22px;
     height: 22px;
-    filter: brightness(0) invert(1); 
+    filter: brightness(0) invert(0); 
 }
 
 .nav-left a {
@@ -121,202 +121,100 @@ body {
 }
 
 /* HERO */
-.hero {
-    position: relative; 
-    background: url('../img/fondo-pilates.png') no-repeat center center/cover;
-    height: 100vh;
-    display: flex;
-    align-items: center;      
-    padding: 0 50px;         
+
+/* ==== ESTILOS DEL CARRITO ==== */
+
+.nav-right span {
+  color: black;
+  margin-top: 10px;
+  margin-left: -10px;
 }
 
-.hero::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
+.carrito {
+  color: white;
+  padding: 40px 10%;
+  min-height: 10vh;
+  margin-top: 150px;
 }
 
-.hero-content {
-    display: flex;
-    flex-direction: column;   
-    justify-content: flex-start;
-    align-items: flex-start; 
-    position: relative;  
-    z-index: 2;          
-    color: white;
-    max-width: 600px;         
-}
+.container h2 {
+  font-size: 70px;
+  margin-top: 200px;
+  margin-bottom: 50px;
 
-.hero h2 {
-    font-size: 120px;
-    font-weight: 900;
-    margin-top: 100px;
-    margin-bottom: 30px;
-    margin-left: 50px;
-
-    font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "Barlow Semi Condensed", sans-serif;
     font-weight: 900;
     font-style: normal;
 }
 
-.hero p {
-    font-size: 18px;
-    margin: 10px 0;
-    margin-left: 50px;
+.producto-carrito {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid #333;
+  padding: 20px 0;
 }
 
-.hero a {
-    color: #ffffff;
-    text-decoration: underline;
-    font-weight: 600;
-    transition: color 0.3s ease;
-}
-
-.hero a:hover {
-    color: #d1e3ff;
-}
-
-/* SECTION1 */
-.section-1 {
-  padding: 50px;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* Dos columnas */
-  gap: 30px;
-  align-items: start;
-}
-
-.left img,
-.right img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
+.producto-carrito img {
+  width: 100px;
+  height: 100px;
   object-fit: cover;
 }
 
-.text {
-  margin-bottom: 20px;
+.producto-carrito h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
-.text p {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #333;
-  margin-bottom: 60px;
+.producto-carrito p {
+  font-size: 0.9rem;
+  color: #bbb;
 }
 
-/* SECTION2 */
-.section-2 {
-  position: relative;
-  text-align: center;
-  padding: 100px 20px;
-  background: #fff;
+.producto-carrito > div:nth-child(3),
+.producto-carrito > div:nth-child(4) {
+  margin-left: auto;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.total {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+.total span:first-child {
+  margin-right: 10px;
+  color: #bbb;
+}
+
+.pagar {
+  display: block;
+  margin-left: auto;
+  margin-top: 20px;
+  padding: 12px 30px;
+  font-size: 1rem;
+  background-color: #ddd;
   color: black;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.section2-content h2 {
-    font-size: 80px;
-    font-weight: 900;
-    text-transform: uppercase;
-    margin-bottom: 30px;
-
-    font-family: "Barlow Semi Condensed", sans-serif;
-    font-weight: 900;
-    font-style: normal;
+.pagar:hover {
+  background-color: #ccc;
 }
 
-.btn-reservar {
-  display: inline-block;
-  padding: 18px 80px;
-  border: 2px solid #000;
-  border-radius: 50px;
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 600;
-  color: #000;
-  transition: all 0.3s ease;
-  margin-top: 30px;
-  margin-bottom: 130px;
-}
-
-.btn-reservar:hover {
-  background: #000;
-  color: #fff;
-}
-
-/* Texto lateral (BOXEO) */
-.side-text {
-    position: absolute;
+.mt-3 {
     display: flex;
-    align-items: center;
-    gap: 8px;
-    text-decoration: none;
-    color: black;  
-}
-
-.side-text span {
-  font-size: 60px;
-  font-weight: 900;
-  color: black;
-  text-decoration: none;  
-  font-family: "Barlow Semi Condensed", sans-serif;
-  font-style: normal;
-}
-
-.side-text .arrow {
-  font-size: 70px;
-  color: black;
-}
-
-.side-link {
-  font-size: 60px;
-  font-weight: 900;
-  color: black;
-  text-decoration: none;
-  font-family: "Barlow Semi Condensed", sans-serif;
-  font-style: normal;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.side-text, .side-link {
-    position: relative;
-    float: right;
-    margin-top: -12px;
-}
-
-
-/* Texto lateral izquierdo (CARDIO) */
-.side-text.left {
-  position: absolute;
-  bottom: 20px;
-  left: 40px;     /* 👈 ahora pegado al lado izquierdo */
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  text-decoration: none;
-  color: black;
-}
-
-.side-text.left .side-link {
-  font-size: 60px;
-  font-weight: 900;
-  color: black;
-  text-decoration: none; /* elimina la raya azul */
-  font-family: "Barlow Semi Condensed", sans-serif;
-  font-style: normal;
-}
-
-.side-text.left .arrow {
-  font-size: 50px;
-  color: black;
+    justify-content: flex-end; 
+    margin-top: 20px;        
+    margin-bottom: 40px;       
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 /* FOOTER */

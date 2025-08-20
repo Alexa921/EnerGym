@@ -4,11 +4,11 @@
     box-sizing: border-box;
 }
 body {
-    color: white;
+    color: black;
 }
 
 .nav-right span {
-    color: white;
+    color: black;
     margin-top: 10px;
     margin-left: -10px;
 }
@@ -29,7 +29,7 @@ body {
 
 .navbar.scrolled {
     position: fixed;     
-    background: black;  
+    background: white;  
     padding: 10px 50px;  
     top: 0;
     left: 0;
@@ -59,7 +59,7 @@ body {
 
 .nav-center a {
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: 22px;
     transition: color 0.3s ease;
     padding: 5px;
@@ -71,7 +71,7 @@ body {
     position: absolute;
     top: 100%; 
     left: 0;
-    background: black;
+    background: white;
     padding: 10px 0;
     list-style: none;
     min-width: 160px;
@@ -86,7 +86,7 @@ body {
 .dropdown-menu li a {
     display: block;
     padding: 10px 20px;
-    color: white;
+    color: black;
     font-size: 16px;
     transition: background 0.3s ease;
 }
@@ -105,14 +105,14 @@ body {
 }
 .nav-right a {
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: 25px; 
     margin-top: -15px;
 }
 .icon {
     width: 22px;
     height: 22px;
-    filter: brightness(0) invert(1); 
+    filter: brightness(0) invert(0); 
 }
 
 .nav-left a {
@@ -121,203 +121,102 @@ body {
 }
 
 /* HERO */
-.hero {
-    position: relative; 
-    background: url('../img/fondo-pilates.png') no-repeat center center/cover;
-    height: 100vh;
-    display: flex;
-    align-items: center;      
-    padding: 0 50px;         
-}
-
-.hero::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-}
-
-.hero-content {
-    display: flex;
-    flex-direction: column;   
-    justify-content: flex-start;
-    align-items: flex-start; 
-    position: relative;  
-    z-index: 2;          
-    color: white;
-    max-width: 600px;         
-}
-
-.hero h2 {
-    font-size: 120px;
-    font-weight: 900;
-    margin-top: 100px;
-    margin-bottom: 30px;
-    margin-left: 50px;
-
-    font-family: "Barlow Semi Condensed", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-}
-
-.hero p {
-    font-size: 18px;
-    margin: 10px 0;
-    margin-left: 50px;
-}
-
-.hero a {
-    color: #ffffff;
-    text-decoration: underline;
-    font-weight: 600;
-    transition: color 0.3s ease;
-}
-
-.hero a:hover {
-    color: #d1e3ff;
-}
 
 /* SECTION1 */
-.section-1 {
-  padding: 50px;
-}
 
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* Dos columnas */
-  gap: 30px;
-  align-items: start;
-}
+    .product-info {
+      max-width: 500px;
+    }
 
-.left img,
-.right img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  object-fit: cover;
-}
+    .breadcrumb {
+      font-size: 18px;
+      margin-top: 200px;
+      color: black;
+    }
 
-.text {
-  margin-bottom: 20px;
-}
+    .breadcrumb a {
+         color: inherit;         
+        text-decoration: none; 
+    }
 
-.text p {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #333;
-  margin-bottom: 60px;
-}
+    h2 {
+      font-size: 90px;
+      margin: 0px 0 20px;
 
-/* SECTION2 */
-.section-2 {
-  position: relative;
-  text-align: center;
-  padding: 100px 20px;
-  background: #fff;
-  color: black;
-}
+      font-family: "Barlow Semi Condensed", sans-serif;
+        font-weight: 800;
+        font-style: normal;
+    }
 
-.section2-content h2 {
-    font-size: 80px;
-    font-weight: 900;
-    text-transform: uppercase;
-    margin-bottom: 30px;
+    .price {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 15px;
 
-    font-family: "Barlow Semi Condensed", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-}
+      font-family: "Barlow Semi Condensed", sans-serif;
+        font-weight: 800;
+        font-style: normal;
+    }
 
-.btn-reservar {
-  display: inline-block;
-  padding: 18px 80px;
-  border: 2px solid #000;
-  border-radius: 50px;
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 600;
-  color: #000;
-  transition: all 0.3s ease;
-  margin-top: 30px;
-  margin-bottom: 130px;
-}
+    .description {
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
 
-.btn-reservar:hover {
-  background: #000;
-  color: #fff;
-}
+    ul {
+      list-style: disc;
+      padding-left: 20px;
+      margin-bottom: 20px;
+    }
 
-/* Texto lateral (BOXEO) */
-.side-text {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    text-decoration: none;
-    color: black;  
-}
+    input {
+      width: 20%;
+      padding: 10px;
+      font-size: 16px;
+      margin-bottom: 20px;
+      border: 1px solid #aaa;
+    }
 
-.side-text span {
-  font-size: 60px;
-  font-weight: 900;
-  color: black;
-  text-decoration: none;  
-  font-family: "Barlow Semi Condensed", sans-serif;
-  font-style: normal;
-}
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
 
-.side-text .arrow {
-  font-size: 70px;
-  color: black;
-}
-
-.side-link {
-  font-size: 60px;
-  font-weight: 900;
-  color: black;
-  text-decoration: none;
-  font-family: "Barlow Semi Condensed", sans-serif;
-  font-style: normal;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.side-text, .side-link {
-    position: relative;
-    float: right;
-    margin-top: -12px;
-}
+    select {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      margin-bottom: 20px;
+      border: 1px solid #aaa;
+    }
 
 
-/* Texto lateral izquierdo (CARDIO) */
-.side-text.left {
-  position: absolute;
-  bottom: 20px;
-  left: 40px;     /* 👈 ahora pegado al lado izquierdo */
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  text-decoration: none;
-  color: black;
-}
+    button {
+      padding: 14px 30px;
+      font-size: 18px;
+      border: 2px solid black;
+      background: white;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all 0.3s;
+      margin-left: -8px;
+    }
 
-.side-text.left .side-link {
-  font-size: 60px;
-  font-weight: 900;
-  color: black;
-  text-decoration: none; /* elimina la raya azul */
-  font-family: "Barlow Semi Condensed", sans-serif;
-  font-style: normal;
-}
+    button:hover {
+      background: black;
+      color: white;
+    }
 
-.side-text.left .arrow {
-  font-size: 50px;
-  color: black;
-}
+    .product-image {
+      padding: 50px;
+    }
+
+    .product-image img {
+        width: 500px;
+      height: 500px;
+      display: block;
+      margin: -600px 680px;
+    }
 
 /* FOOTER */
 .footer {

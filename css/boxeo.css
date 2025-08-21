@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     color: white;
 }
@@ -82,7 +83,6 @@ body {
     transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-/* Opciones dentro del dropdown */
 .dropdown-menu li a {
     display: block;
     padding: 10px 20px;
@@ -91,7 +91,6 @@ body {
     transition: background 0.3s ease;
 }
 
-/* Mostrar el dropdown al hacer hover */
 .dropdown:hover .dropdown-menu {
     display: block;
     opacity: 1;
@@ -103,12 +102,14 @@ body {
     align-items: center;
     gap: 15px;
 }
+
 .nav-right a {
     text-decoration: none;
     color: white;
     font-size: 25px; 
     margin-top: -15px;
 }
+
 .icon {
     width: 22px;
     height: 22px;
@@ -183,42 +184,42 @@ body {
 
 /* SECTION1 */
 .section-1 {
-  padding: 50px;
+    padding: 50px;
 }
 
 .grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* Dos columnas */
-  gap: 30px;
-  align-items: start;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas */
+    gap: 30px;
+    align-items: start;
 }
 
 .left img,
 .right img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  object-fit: cover;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
 }
 
 .text {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .text p {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #333;
-  margin-bottom: 60px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 60px;
 }
 
 /* SECTION2 */
 .section-2 {
-  position: relative;
-  text-align: center;
-  padding: 100px 20px;
-  background: #fff;
-  color: black;
+    position: relative;
+    text-align: center;
+    padding: 100px 20px;
+    background: #fff;
+    color: black;
 }
 
 .section2-content h2 {
@@ -233,22 +234,22 @@ body {
 }
 
 .btn-reservar {
-  display: inline-block;
-  padding: 18px 80px;
-  border: 2px solid #000;
-  border-radius: 50px;
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 600;
-  color: #000;
-  transition: all 0.3s ease;
-  margin-top: 30px;
-  margin-bottom: 130px;
+    display: inline-block;
+    padding: 18px 80px;
+    border: 2px solid #000;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    transition: all 0.3s ease;
+    margin-top: 30px;
+    margin-bottom: 130px;
 }
 
 .btn-reservar:hover {
-  background: #000;
-  color: #fff;
+    background: #000;
+    color: #fff;
 }
 
 /* Texto lateral (BOXEO) */
@@ -262,29 +263,29 @@ body {
 }
 
 .side-text span {
-  font-size: 60px;
-  font-weight: 900;
-  color: black;
-  text-decoration: none;  
-  font-family: "Barlow Semi Condensed", sans-serif;
-  font-style: normal;
+    font-size: 60px;
+    font-weight: 900;
+    color: black;
+    text-decoration: none;  
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-style: normal;
 }
 
 .side-text .arrow {
-  font-size: 70px;
-  color: black;
+    font-size: 70px;
+    color: black;
 }
 
 .side-link {
-  font-size: 60px;
-  font-weight: 900;
-  color: black;
-  text-decoration: none;
-  font-family: "Barlow Semi Condensed", sans-serif;
-  font-style: normal;
-  display: flex;
-  align-items: center;
-  gap: 8px;
+    font-size: 60px;
+    font-weight: 900;
+    color: black;
+    text-decoration: none;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .side-text, .side-link {
@@ -296,28 +297,28 @@ body {
 
 /* Texto lateral izquierdo (CARDIO) */
 .side-text.left {
-  position: absolute;
-  bottom: 20px;
-  left: 40px;     /* 👈 ahora pegado al lado izquierdo */
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  text-decoration: none;
-  color: black;
+    position: absolute;
+    bottom: 20px;
+    left: 40px;     
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: black;
 }
 
 .side-text.left .side-link {
-  font-size: 60px;
-  font-weight: 900;
-  color: black;
-  text-decoration: none; /* elimina la raya azul */
-  font-family: "Barlow Semi Condensed", sans-serif;
-  font-style: normal;
+    font-size: 60px;
+    font-weight: 900;
+    color: black;
+    text-decoration: none; 
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-style: normal;
 }
 
 .side-text.left .arrow {
-  font-size: 50px;
-  color: black;
+    font-size: 50px;
+    color: black;
 }
 
 /* FOOTER */
@@ -435,4 +436,234 @@ body {
     width: 270px;
     flex: none;
     color: rgb(129, 129, 129);
+}
+
+/* --- ESTILOS RESPONSIVOS --- */
+
+@media (max-width: 1024px) {
+    /* NAVBAR */
+    .navbar {
+        padding: 10px 30px;
+    }
+
+    .nav-left .logo {
+        font-size: 35px;
+        margin-left: 20px;
+    }
+
+    .nav-center {
+        gap: 15px;
+    }
+    
+    .nav-center a {
+        font-size: 18px;
+    }
+
+    .nav-right a {
+        font-size: 20px;
+    }
+
+    /* HERO */
+    .hero {
+        height: 60vh;
+        padding: 0 20px;
+    }
+    
+    .hero h2 {
+        font-size: 80px;
+        margin-left: 0;
+    }
+    
+    .hero p {
+        font-size: 16px;
+        margin-left: 0;
+    }
+
+    /* SECTION1 */
+    .section-1 {
+        padding: 30px;
+    }
+    
+    .grid-container {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+    }
+    
+    .text p {
+        margin-bottom: 30px;
+    }
+
+    /* SECTION2 */
+    .section-2 {
+        padding: 50px 20px;
+    }
+    
+    .section2-content h2 {
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+    
+    .btn-reservar {
+        padding: 15px 60px;
+        font-size: 16px;
+        margin-bottom: 80px;
+    }
+    
+    .side-text, .side-link {
+        font-size: 40px;
+        position: relative; 
+        bottom: auto;
+        left: auto;
+        right: auto;
+        float: none;
+        justify-content: center;
+        margin: 20px auto;
+    }
+    
+    .side-text.left, .side-text.left .side-link {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .side-text .arrow {
+        font-size: 50px;
+    }
+
+    /* FOOTER */
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-top h2, .footer-top p {
+        margin-left: 0;
+        text-align: center;
+    }
+    
+    .footer-top h2 {
+        font-size: 60px;
+    }
+
+    .footer-top p {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer-top form {
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    .footer-top button {
+        margin-right: 0;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-links h3, .footer-links ul li a, .footer-links p {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    /* NAVBAR */
+    .navbar {
+        padding: 10px 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-left .logo {
+        font-size: 30px;
+        margin-left: 0;
+    }
+
+    .nav-center, .nav-right {
+        display: none; 
+    }
+
+    /* HERO */
+    .hero {
+        height: 50vh;
+    }
+
+    .hero h2 {
+        font-size: 50px;
+        margin-top: 50px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    /* SECTION1 */
+    .section-1 {
+        padding: 20px;
+    }
+
+    /* SECTION2 */
+    .section2-content h2 {
+        font-size: 35px;
+    }
+    
+    .btn-reservar {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 14px;
+        padding: 12px 40px;
+    }
+    
+    .side-text span, .side-link {
+        font-size: 25px;
+    }
+    
+    .side-text .arrow {
+        font-size: 30px;
+    }
+
+    .side-text.left .side-link {
+    font-size: 25px;
+}
+
+    /* FOOTER */
+    .footer {
+        padding: 30px 10px;
+    }
+
+    .footer-top h2 {
+        font-size: 40px;
+    }
+    
+    .footer-top p {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+    
+    .footer-top form {
+        flex-direction: column;
+    }
+
+    .footer-top input[type="email"] {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+    
+    .footer-top button {
+        width: 90%;
+    }
+    
+    .footer-links h3 {
+        font-size: 25px;
+    }
+
+    .footer-logo h3 {
+        font-size: 30px;
+    }
 }

@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     color: black;
 }
@@ -65,7 +66,6 @@ body {
     padding: 5px;
 }
 
-/* Dropdown oculto */
 .dropdown-menu {
     display: none;
     position: absolute;
@@ -82,7 +82,6 @@ body {
     transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-/* Opciones dentro del dropdown */
 .dropdown-menu li a {
     display: block;
     padding: 10px 20px;
@@ -91,7 +90,6 @@ body {
     transition: background 0.3s ease;
 }
 
-/* Mostrar el dropdown al hacer hover */
 .dropdown:hover .dropdown-menu {
     display: block;
     opacity: 1;
@@ -291,4 +289,173 @@ body {
     width: 270px;
     flex: none;
     color: rgb(129, 129, 129);
+}
+
+
+/* --- ESTILOS RESPONSIVOS --- */
+
+@media (max-width: 1024px) {
+    /* NAVBAR */
+    .navbar {
+        padding: 10px 30px; 
+    }
+
+    .nav-left .logo {
+        font-size: 40px;
+        margin-left: 20px;
+    }
+
+    /* SECTION: CONTACTO */
+    .contacto {
+        grid-template-columns: 1fr;
+        padding: 40px 20px;
+        gap: 30px;
+    }
+
+    .contacto .info h2 {
+        font-size: 80px;
+        margin-top: 100px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .contacto .info h3 {
+        font-size: 50px;
+        margin-top: 30px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .contacto .info p {
+        font-size: 16px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .contacto .mapa iframe {
+        width: 100%;
+        height: 400px;
+        margin-top: 50px;
+    }
+
+    .linea {
+        width: 90%;
+        margin-top: 50px; 
+        margin-left: 5%;
+        margin-bottom: 50px;
+    }
+    
+    /* FOOTER */
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-top h2, .footer-top p {
+        margin-left: 0;
+        text-align: center;
+    }
+    
+    .footer-top h2 {
+        font-size: 60px;
+    }
+
+    .footer-top p {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer-top form {
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    .footer-top button {
+        margin-right: 0;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-links h3, .footer-links ul li a, .footer-links p {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    /* NAVBAR */
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .nav-left .logo {
+        font-size: 35px;
+    }
+    
+    .nav-center, .nav-right {
+        display: none; 
+    }
+
+    /* SECTION: CONTACTO */
+    .contacto .info h2 {
+        font-size: 45px;
+        margin-top: 80px;
+    }
+
+    .contacto .info h3 {
+        font-size: 30px;
+    }
+
+    .contacto .info p {
+        font-size: 15px;
+    }
+
+    .contacto .mapa iframe {
+        min-height: 250px;
+    }
+    
+    .linea {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    
+    /* FOOTER */
+    .footer {
+        padding: 30px 10px;
+    }
+    
+    .footer-top h2 {
+        font-size: 40px;
+    }
+    
+    .footer-top p {
+        font-size: 14px;
+    }
+    
+    .footer-top form {
+        flex-direction: column;
+    }
+
+    .footer-top input[type="email"] {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+    
+    .footer-top button {
+        width: 90%;
+    }
+    
+    .footer-links h3 {
+        font-size: 25px;
+    }
+
+    .footer-logo h3 {
+        font-size: 30px;
+    }
 }

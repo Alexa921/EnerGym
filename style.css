@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     color: white;
 }
@@ -82,7 +83,6 @@ body {
     transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-/* Opciones dentro del dropdown */
 .dropdown-menu li a {
     display: block;
     padding: 10px 20px;
@@ -91,7 +91,6 @@ body {
     transition: background 0.3s ease;
 }
 
-/* Mostrar el dropdown al hacer hover */
 .dropdown:hover .dropdown-menu {
     display: block;
     opacity: 1;
@@ -103,12 +102,14 @@ body {
     align-items: center;
     gap: 15px;
 }
+
 .nav-right a {
     text-decoration: none;
     color: white;
     font-size: 25px; 
     margin-top: -15px;
 }
+
 .icon {
     width: 22px;
     height: 22px;
@@ -584,4 +585,364 @@ body {
     width: 270px;
     flex: none;
     color: rgb(129, 129, 129);
+}
+
+
+/* --- ESTILOS RESPONSIVOS --- */
+
+/* Ajustes para pantallas medianas (tablets y laptops pequeñas) */
+@media (max-width: 1024px) {
+    /* NAVBAR */
+    .navbar {
+        padding: 10px 30px;
+    }
+
+    .nav-left .logo {
+        font-size: 35px;
+        margin-left: 20px;
+    }
+
+    .nav-center {
+        gap: 15px;
+    }
+    
+    .nav-center a {
+        font-size: 18px;
+    }
+
+    .nav-right a {
+        font-size: 20px;
+    }
+    
+    /* HERO */
+    .hero {
+        padding: 0 30px;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .hero-content h2 {
+        font-size: 60px;
+        margin-top: 200px;
+        margin-left: 0;
+    }
+    
+    .btn {
+        margin-top: 50px;
+        margin-left: 0;
+        align-self: flex-start;
+    }
+
+    /* SECTION1 */
+    .section1 {
+        flex-direction: column;
+        padding: 50px 5%;
+        gap: 30px;
+    }
+    
+    .section1 p:first-child {
+        font-size: 40px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    
+    .section1 p:last-child {
+        font-size: 16px;
+        margin-top: 0;
+    }
+
+    /* SECTION2 */
+    .section2 {
+        padding: 50px 30px;
+    }
+    
+    .img-mujeres {
+        width: 100%;
+        height: auto;
+    }
+
+    /* SECTION3 */
+    .section3 h2 {
+        font-size: 45px;
+        margin-top: 80px;
+    }
+    
+    .section3 p {
+        font-size: 20px;
+        max-width: 90%;
+    }
+
+    .section3 .columna {
+        width: 45%;
+        margin-bottom: 50px;
+    }
+
+    /* SECTION4 */
+    .section4 {
+        flex-direction: column;
+        padding: 50px 50px;
+        gap: 30px;
+    }
+    
+    .section4-texto h2 {
+        font-size: 45px;
+    }
+
+    .section4-texto p {
+        font-size: 18px;
+    }
+    
+    .section4-formulario input {
+        width: 100%;
+    }
+    
+    .nombre-apellido {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .nombre-apellido input {
+        width: 100%;
+    }
+
+    /* SECTION5 */
+    .testimonial-container {
+        height: auto;
+        padding: 30px 20px;
+    }
+    
+    .testimonial {
+        font-size: 40px;
+        margin-top: 30px;
+    }
+    
+    .author {
+        font-size: 18px;
+    }
+
+    /* SECTION6 */
+    .section6 .locations {
+        flex-direction: column;
+    }
+    
+    .location {
+        flex: 1 1 100%;
+        margin-bottom: 30px;
+    }
+
+    .location h2 {
+        font-size: 40px;
+        margin-top: 50px;
+    }
+    
+    .location p {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .location .images {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .location .images img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    /* FOOTER */
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-top h2, .footer-top p {
+        margin-left: 0;
+        text-align: center;
+    }
+    
+    .footer-top h2 {
+        font-size: 60px;
+    }
+
+    .footer-top p {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer-top form {
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    .footer-top button {
+        margin-right: 0;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-links h3, .footer-links ul li a, .footer-links p {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+/* Ajustes para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    /* NAVBAR */
+    .navbar {
+        padding: 10px 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-left .logo {
+        font-size: 30px;
+        margin-left: 0;
+    }
+
+    .nav-center, .nav-right {
+        display: none;
+    }
+
+    /* HERO */
+    .hero {
+        padding: 0 20px;
+        height: 60vh;
+    }
+    
+    .hero-content h2 {
+        font-size: 40px;
+        margin-top: 100px;
+    }
+    
+    .btn {
+        margin-top: 30px;
+        padding: 12px 30px;
+        font-size: 16px;
+    }
+    
+    /* SECTION1 */
+    .section1 p:first-child {
+        font-size: 28px;
+    }
+    
+    .section1 p:last-child {
+        font-size: 14px;
+    }
+    
+    /* SECTION2 */
+    .section2 {
+        padding: 30px 20px;
+    }
+
+    /* SECTION3 */
+    .section3 h2 {
+        font-size: 35px;
+        margin-top: 50px;
+    }
+
+    .section3 p {
+        font-size: 16px;
+    }
+
+    .section3 .columna {
+        width: 100%;
+    }
+
+    .section3 ul {
+        margin-left: 0;
+    }
+    
+    .section3 li {
+        font-size: 16px;
+    }
+
+    /* SECTION4 */
+    .section4 {
+        padding: 30px 20px;
+    }
+    
+    .section4-texto h2 {
+        font-size: 35px;
+    }
+    
+    .section4-texto p {
+        font-size: 16px;
+    }
+
+    .section4-formulario input, .nombre-apellido input {
+        width: 100%;
+    }
+
+    /* SECTION5 */
+    .testimonial {
+        font-size: 28px;
+    }
+    
+    .author {
+        font-size: 16px;
+    }
+
+    /* SECTION6 */
+    .location h2 {
+        font-size: 30px;
+    }
+    
+    .location p {
+        font-size: 14px;
+    }
+    
+    .location .images img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* FOOTER */
+    .footer {
+        padding: 30px 10px;
+    }
+
+    .footer-top h2 {
+        font-size: 40px;
+    }
+    
+    .footer-top p {
+        font-size: 14px;
+    }
+    
+    .footer-top form {
+        flex-direction: column;
+    }
+
+    .footer-top input[type="email"] {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+    
+    .footer-top button {
+        width: 90%;
+    }
+    
+    .footer-links h3 {
+        font-size: 25px;
+    }
+
+    .footer-links ul li a, .footer-links p {
+        font-size: 16px;
+    }
+
+    .footer-logo h3 {
+        font-size: 30px;
+    }
 }

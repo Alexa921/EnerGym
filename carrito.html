@@ -86,11 +86,11 @@
     </footer>
 
     <script>
-document.addEventListener("DOMContentLoaded", function () {
-    let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
-    let listaCarrito = document.getElementById("lista-carrito");
-    let subtotalElem = document.getElementById("subtotal");
-    let contadorElem = document.getElementById("contador");
+    document.addEventListener("DOMContentLoaded", function () {
+        let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+        let listaCarrito = document.getElementById("lista-carrito");
+        let subtotalElem = document.getElementById("subtotal");
+        let contadorElem = document.getElementById("contador");
 
     function formatearPrecio(precio) {
         return precio.toLocaleString("es-CO", {
@@ -147,6 +147,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
     renderCarrito();
 });
+
+
+    // Detecta el scroll y agrega/clasifica clase "scrolled"
+    window.addEventListener('scroll', function() {
+        const navbar = document.querySelector('.navbar');
+        if (window.scrollY > 50) { 
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
 </script>
 </body>
 <script src="carrito.js"></script>

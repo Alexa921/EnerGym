@@ -45,7 +45,6 @@
     <main>
         <!-- SECTION1 -->
          <div class="container">
-            <!-- Texto del producto -->
             <div class="product-info">
                 <div class="breadcrumb"><a href="tienda.html">Tienda ›  </a> Camiseta de Endurance</div>
                 <h2>Camiseta de <br>Endurance</h2>
@@ -67,7 +66,6 @@
                 <button class="btn-carrito">Agregar al carrito</button>
                 </div>
 
-                <!-- Imagen del producto -->
                 <div class="product-image">
                     <img src="img/camisa1.png" alt="Camisas">
                 </div>
@@ -110,5 +108,17 @@
         </div>
     </footer>
      <script src="carrito.js"></script>
+
+     <script>
+    // Detecta el scroll y agrega/clasifica clase "scrolled"
+    window.addEventListener('scroll', function() {
+        const navbar = document.querySelector('.navbar');
+        if (window.scrollY > 50) { 
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+</script>
 </body>
 </html>

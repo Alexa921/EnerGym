@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     color: black;
 }
@@ -65,7 +66,6 @@ body {
     padding: 5px;
 }
 
-/* Dropdown oculto */
 .dropdown-menu {
     display: none;
     position: absolute;
@@ -82,7 +82,6 @@ body {
     transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-/* Opciones dentro del dropdown */
 .dropdown-menu li a {
     display: block;
     padding: 10px 20px;
@@ -91,7 +90,6 @@ body {
     transition: background 0.3s ease;
 }
 
-/* Mostrar el dropdown al hacer hover */
 .dropdown:hover .dropdown-menu {
     display: block;
     opacity: 1;
@@ -362,4 +360,220 @@ body {
     width: 270px;
     flex: none;
     color: rgb(129, 129, 129);
+}
+
+
+/* --- ESTILOS RESPONSIVOS --- */
+
+@media (max-width: 1024px) {
+    /* NAVBAR */
+    .navbar {
+        padding: 10px 30px;
+    }
+
+    .nav-left .logo {
+        font-size: 35px;
+        margin-left: 20px;
+    }
+
+    .nav-center {
+        gap: 15px;
+    }
+    
+    .nav-center a {
+        font-size: 18px;
+    }
+
+    .nav-right a {
+        font-size: 20px;
+    }
+
+    /* HERO */
+    .hero {
+        padding: 0 30px;
+        height: 60vh;
+    }
+    
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .btn {
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* SECTION1: TIENDA */
+    .tienda-section h2 {
+        font-size: 50px;
+        margin-top: 50px;
+    }
+    
+    .tienda-descripcion {
+        font-size: 16px;
+        max-width: 90%;
+        margin-bottom: 50px;
+    }
+    
+    .productos-grid {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px;
+    }
+    
+    .producto img {
+        width: 100%;
+        margin-top: 100px;
+        margin-left: 0;
+    }
+
+    .producto h3 {
+        font-size: 30px;
+    }
+
+    .t-1, .t-2, .t-3, .t-4, .t-5 {
+        margin-left: 0;
+    }
+
+    .footer {
+        margin-top: 150px;
+    }
+
+    /* FOOTER */
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-top h2, .footer-top p {
+        margin-left: 0;
+        text-align: center;
+    }
+    
+    .footer-top h2 {
+        font-size: 60px;
+    }
+
+    .footer-top p {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer-top form {
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    .footer-top button {
+        margin-right: 0;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-links h3, .footer-links ul li a, .footer-links p {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    /* NAVBAR */
+    .navbar {
+        padding: 10px 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-left .logo {
+        font-size: 30px;
+        margin-left: 0;
+    }
+
+    .nav-center, .nav-right {
+        display: none; 
+    }
+
+    /* HERO */
+    .hero {
+        height: 50vh;
+        padding: 0 20px;
+    }
+
+    .btn {
+        padding: 12px 60px;
+        font-size: 16px;
+        width: 80%;
+    }
+
+    /* SECTION1: TIENDA */
+    .tienda-section h2 {
+        font-size: 40px;
+        margin-top: 30px;
+    }
+
+    .tienda-descripcion {
+        margin-bottom: 30px;
+    }
+
+    .productos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .producto img {
+        margin-top: 50px;
+    }
+
+    .producto h3 {
+        font-size: 25px;
+    }
+
+    .producto .precio {
+        margin-bottom: -50px;
+    }
+    
+    .footer {
+        margin-top: 100px;
+    }
+
+    /* FOOTER */
+    .footer {
+        padding: 30px 10px;
+    }
+
+    .footer-top h2 {
+        font-size: 40px;
+    }
+    
+    .footer-top p {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+    
+    .footer-top form {
+        flex-direction: column;
+    }
+
+    .footer-top input[type="email"] {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+    
+    .footer-top button {
+        width: 90%;
+    }
+    
+    .footer-links h3 {
+        font-size: 25px;
+    }
+
+    .footer-logo h3 {
+        font-size: 30px;
+    }
 }
